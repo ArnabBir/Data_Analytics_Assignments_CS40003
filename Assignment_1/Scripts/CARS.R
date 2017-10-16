@@ -1,0 +1,8 @@
+CARS <- read.csv("../Data/CARS.csv")
+head(CARS)
+am_speed <- mean(CARS$speed)
+am_dist <- mean(CARS$dist)
+gm_speed <- prod(CARS$speed)^(1/length(CARS$speed))
+gm_dist <- prod(CARS$dist)^(1/length(CARS$dist))
+hm_speed <- 1/mean(1/CARS$speed) 
+hm_dist <- 1/mean(1/CARS$dist) 
